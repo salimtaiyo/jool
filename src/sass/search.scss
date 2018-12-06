@@ -1,0 +1,13 @@
+.search{
+    height: 100vh;
+    background: linear-gradient(to bottom, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
+
+    &__body{
+        text-align: center;
+    }
+
+    &__container{
+        transform: translateY(150%);
+    }
+}
+

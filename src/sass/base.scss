@@ -6,7 +6,6 @@
 // open sans
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-@import url('https://fonts.googleapis.com/css?family=Satisfy');
 
 body{
     box-sizing: border-box;
@@ -16,5 +15,10 @@ body{
 
 input:focus, textarea, button {
     outline: none !important;
+}
+
+.main__image{
+    height: 2rem;
+    width: 1rem;
 }
 

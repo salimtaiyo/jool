@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Satisfy");
 * {
   margin: 0;
   padding: 0; }
@@ -11,3 +10,68 @@ body {
 
 input:focus, textarea, button {
   outline: none !important; }
+
+.main__image {
+  height: 2rem;
+  width: 1rem; }
+
+.signin {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%);
+  width: 100vw;
+  height: 100vh; }
+  .signin__links {
+    align-items: flex-end; }
+  .signin__body {
+    transform: translate(0, 40%);
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center; }
+    .signin__body--header {
+      font-size: 3rem; }
+    .signin__body--sub {
+      font-size: 1.6rem; }
+    .signin__body--btn {
+      text-align: left !important;
+      padding: .5rem;
+      text-decoration: none; }
+  .signin input {
+    width: 50%;
+    height: 2rem; }
+
+.bar {
+  transform: translate(20%);
+  width: 70%;
+  margin: 0 auto; }
+  .bar__search {
+    width: 50%;
+    height: 1.5rem;
+    border-right: none; }
+  .bar__btn {
+    height: 1.5rem;
+    border-left: none;
+    transform: translateY(23%);
+    font-size: 1.2rem;
+    border-right: 1px solid black; }
+  .bar__btn, .bar__search {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; }
+  .bar__select {
+    height: 1.7rem; }
+
+.header {
+  background: linear-gradient(to bottom, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem; }
+
+.search {
+  height: 100vh;
+  background: linear-gradient(to bottom, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); }
+  .search__body {
+    text-align: center; }
+  .search__container {
+    transform: translateY(150%); }

@@ -1,0 +1,37 @@
+.signin{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #f0f9ff 0%,#cbebff 47%,#a1dbff 100%);
+    width: 100vw;
+    height: 100vh;
+
+    &__links{    
+        align-items: flex-end;
+    }
+
+    &__body{
+        transform: translate(0, 40%);
+        width: 70%;
+        margin: 0 auto;
+        padding: 2rem;
+        text-align: center;
+
+        &--header{
+            font-size: 3rem;
+        }
+
+        &--sub{
+            font-size: 1.6rem;
+        }
+        &--btn{
+            text-align: left !important;
+            padding: .5rem;
+            text-decoration: none;
+        }
+    }
+
+    & input{
+        width: 50%;
+        height: 2rem;
+    }
+}

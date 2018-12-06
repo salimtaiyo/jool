@@ -1,0 +1,29 @@
+.bar{
+
+    transform: translate(20%);
+    width: 70%;
+    margin: 0 auto;
+
+    &__search{
+        width: 50%;
+        height: 1.5rem;
+        border-right: none;
+    }
+
+    &__btn{
+        height: 1.5rem;
+        border-left: none;
+        transform: translateY(23%);
+        font-size: 1.2rem;
+        border-right: 1px solid black;
+    }
+
+    &__btn, &__search{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+    &__select{
+        height: 1.7rem;
+    }
+}
