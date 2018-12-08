@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+import { connect } from 'react-redux';
+import { loginUser } from '../../actions/authActions';
 
-export class Signin extends Component {
+class Signin extends Component {
   state ={
     email: null,
     password: null
@@ -14,9 +15,7 @@ export class Signin extends Component {
       email: this.state.email,
       password: this.state.password
     }
-    axios.post('http://localhost:5000/login', user)
-    .then(res => ( console.log(res.data.token)))
-    .catch(err => console.log(err));
+    this.props.loginUser(user);
   }
 
   inputHandler = (event) => {
@@ -25,16 +24,19 @@ export class Signin extends Component {
   render() {
     return ( 
       <div className="signin">
+
+        {/* Link to Register page */}
         <div className="singin__links">
           <Link to="/signup"> Sign up </Link>
         </div>
 
         <div className="signin__body">
-          <h1 className="signin__body--header"> joOle </h1>
+          <img src="logo.png" className="signin__body--header" alt="logo"/>
           <h4 className="signin__body--sub"> Building product selection platform</h4>
           <br/>
           <br/>
 
+          {/* Login body */}
           <form>
             <input type="email" name="email" onChange={this.inputHandler} placeholder="email"/>
             <br/>
@@ -53,4 +55,9 @@ export class Signin extends Component {
   }
 }
 
-export default Signin
+const mapStateToProps = state => ({
+  auth: state.auth,
+  errors: state.errors
+});
+
+export default connect(mapStateToProps, {loginUser})(Signin);

@@ -1,0 +1,14 @@
+.proPage{ 
+    &__content{
+        display: flex;
+        flex-direction: row;
+
+        &--side{
+            flex:1
+        }
+
+        &--main{
+            flex:3;
+        }
+    }
+}

@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 // component imports
 import Signin from './component/Signin';
 import Signup from './component/Signup';
-import Search from './component/Search.js';
+import Search from './component/Search/Search';
 import ProductPage from './component/Product/ProductPage';
 
 class App extends Component {

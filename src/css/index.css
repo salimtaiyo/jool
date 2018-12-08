@@ -30,7 +30,8 @@ input:focus, textarea, button {
     padding: 2rem;
     text-align: center; }
     .signin__body--header {
-      font-size: 3rem; }
+      width: 15rem;
+      height: 100%; }
     .signin__body--sub {
       font-size: 1.6rem; }
     .signin__body--btn {
@@ -73,5 +74,87 @@ input:focus, textarea, button {
   background: linear-gradient(to bottom, #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); }
   .search__body {
     text-align: center; }
+    .search__body--img {
+      width: 15rem;
+      height: 100%; }
   .search__container {
     transform: translateY(150%); }
+
+.proPage__content {
+  display: flex;
+  flex-direction: row; }
+  .proPage__content--side {
+    flex: 1; }
+  .proPage__content--main {
+    flex: 3; }
+
+.sideContainer {
+  height: 100vh;
+  border-right: 1px solid #a09d9d; }
+
+.sideHead {
+  height: 1rem;
+  border-bottom: 1px solid #a09d9d;
+  padding: 1rem; }
+  .sideHead span {
+    font-size: 140%; }
+  .sideHead button {
+    color: #fcf9f9;
+    font-size: 120%;
+    padding: .2rem 1rem;
+    background-color: #8a8888;
+    margin-right: .4rem; }
+
+.side__header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  color: #2e2d2d; }
+  .side__header div {
+    border: 1px solid #a09d9d;
+    height: 100%;
+    width: 100%;
+    text-align: center; }
+
+.product__contents--type h3 {
+  background-color: #8a8787;
+  padding: .4rem; }
+
+.product__contents--type .type--input {
+  width: 2rem; }
+
+.products__item {
+  border: 1px solid #b8b5b5;
+  margin: 1rem;
+  list-style-type: none;
+  display: inline-flex; }
+  .products__item--img {
+    width: 7rem;
+    height: 3rem;
+    padding: 1rem; }
+  .products__item h2 {
+    text-align: center; }
+  .products__item--specs {
+    background-color: #bbb9b9;
+    padding: 1rem; }
+  .products__item--footer {
+    padding: .5rem; }
+    .products__item--footer--btn {
+      background-color: rgba(91, 112, 204, 0.89);
+      padding: .2rem;
+      margin-left: 1rem;
+      color: #eee; }
+
+.register {
+  width: 80vw;
+  margin: 0 auto;
+  text-align: center; }
+  .register input {
+    width: 80%;
+    height: 2rem;
+    margin-top: 1rem; }
+  .register button {
+    padding: 1rem;
+    margin-top: 1rem; }

@@ -7,10 +7,20 @@ import Products from './Products';
 class ProductPage extends Component {
   render() {
     return (
-      <div>
+      <div className="proPage">
         <Header/>
-        <Parameters/>
-        <Products/>
+
+        <div className="proPage__content">
+
+          <div className="proPage__content--side">
+            <Parameters/>
+          </div>
+          
+          <div className="proPage__content--main">
+            <Products/>
+          </div>
+        </div>
+        
       </div>
     )
   }

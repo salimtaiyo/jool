@@ -10,6 +10,7 @@ app.use(cors());
 
 // routes
 const userRouter = require('./routing/users');
+const itemRouter = require('./routing/items');
 
 // database
 mongoose
@@ -26,6 +27,6 @@ mongoose
 
   mongoose.set('useCreateIndex', true)
 
-app.use('/', userRouter);
+app.use('/', userRouter, itemRouter);
 
 app.listen(port, () => { console.log('The backend is running in port ' + port)});

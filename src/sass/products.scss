@@ -1,0 +1,35 @@
+.products{
+
+    &__item{
+
+        border: 1px solid rgb(184, 181, 181);
+        margin: 1rem;
+        list-style-type: none;
+        display: inline-flex;
+
+        &--img{
+            width: 7rem;
+            height: 3rem;
+            padding: 1rem;
+        }
+        & h2{
+            text-align: center;
+        }
+
+        &--specs{
+            background-color: rgb(187, 185, 185);
+            padding: 1rem;
+        }
+
+        &--footer{
+            padding: .5rem;
+
+            &--btn{
+                background-color: rgba(91, 112, 204, 0.89);
+                padding: .2rem;
+                margin-left: 1rem;
+                color: #eee;
+            }
+        }
+    }
+}

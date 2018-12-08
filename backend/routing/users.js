@@ -20,8 +20,8 @@ router.post("/signup", (req,res) => {
             user.save()
                 .then(result => {
                     res.json({
-                            message: "the user has been created",
-                            result: result
+                        message: "the user has been created",
+                        result: result
                     });
                 })
                 .catch(err =>{ 
@@ -67,7 +67,7 @@ router.post("/login", (req,res) => {
                 expiresIn: 10000 
             });
         })
-        .catch( err => { console.log(err) })
+        .catch( err => res.json(err))
 })
 
 module.exports = router;

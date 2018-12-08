@@ -4,6 +4,11 @@
 
     &__body{
         text-align: center;
+
+        &--img{
+            width: 15rem;
+            height: 100%;
+        }
     }
 
     &__container{
